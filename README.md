@@ -1,6 +1,7 @@
 This code is designed to run on a pi pico based barometer/thermometer for medical physics T/P correction measurements.
 The main file is my own work. The libraries are sourced from other sites.
 BMP280.py from https://github.com/dafvid/micropython-bmp280/blob/master/bmp280.py
+BMP390.py is adapted from https://github.com/DFRobot/DFRobot_BMP388
 i2c_lcd.py from https://github.com/T-622/RPI-PICO-I2C-LCD/blob/main/pico_i2c_lcd.py
 lcd_api.py https://github.com/T-622/RPI-PICO-I2C-LCD/blob/main/lcd_api.py
 This is a python file designed to work on the raspberry pi pico with the micropython interpreter installed.
