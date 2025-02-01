@@ -124,13 +124,13 @@ def getPressure():
         
     elif bmp280_connected and not bmp390_connected:
         p_ave = getP280()
-        
+        p_diff = 0
     elif not bmp280_connected and bmp390_connected:
         p_ave = getP390()
-        
+        p_diff = 0
     else:
         p_ave = 0
-        
+        p_diff = 0
     return p_ave, p_diff
 
 
