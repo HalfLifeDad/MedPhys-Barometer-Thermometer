@@ -1,4 +1,4 @@
-#Written by Bryan Jackson V1.1 completed 1-7-2025
+#Written by Bryan Jackson V1.2 completed 1-7-2025
 #Load along with libraries onto pi pico with MicroPython interpreter
 
 from machine import Pin, I2C
