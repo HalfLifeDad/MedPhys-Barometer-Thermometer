@@ -71,9 +71,13 @@ else:
     bmp390.IIRConfig()
 
 def getTemp():#Read in the temperature and apply the calibration offset correction.
-    ds.convert_temp()
-    for device in devices:
-        temp=ds.read_temp(device)+t_correction
+    try:
+        ds.convert_temp()
+    except:
+        temp = 0
+    else:
+        for device in devices:
+            temp=ds.read_temp(device)+t_correction
     return temp
 
 def dispTemp():#Display the temperature
